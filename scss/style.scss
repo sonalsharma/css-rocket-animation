@@ -1,0 +1,13 @@
+/* this file imports all scss partials to be compiled into one stylesheet
+partial files arent compiled until imported into an unprefixed .scss file */
+
+
+
+/* import all partial files(variables, mixinis and other modules */
+@import "base";
+@import "mixins";
+
+/*component rules */
+@import "components/main";
+
+/* hierarchy matters. import variables first, then mixins, then fonts etc */

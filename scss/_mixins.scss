@@ -1,0 +1,45 @@
+/*contains all mixins*/
+
+@mixin button($bg-color, $color, $hover-color){
+	
+	background-color:$bg-color;
+	border-radius:3px;
+	padding: .5em 1em;
+	margin:1em;
+	display:inline-block;
+	text-decoration:none;
+	color: $color;
+	
+	&:hover {
+		background-color:$hover-color;
+	}
+
+}
+
+@mixin button2($bg-color, $color, $hover-color){
+	
+	background-color:$bg-color;
+	padding: .75rem;
+  	margin: .375rem;
+	display:inline-block;
+	text-decoration:none;
+	color: $color;
+	border:2px solid $dark;
+	border-radius: 4px;
+	line-height: 1.375;
+  	padding-left: 1.5rem;
+  	padding-right: 1.5rem;
+  	font-size: 1em;
+
+  	cursor: pointer;
+  	-webkit-animation: hue 60s infinite linear;
+	
+	&:hover {
+		background-color:$hover-color;
+	}
+	
+	&:focus {
+		outline:none;
+	}
+
+}

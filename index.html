@@ -2,29 +2,38 @@
 <html lang="en-ca">
 <head>
 	<meta charset="utf-8">
-	<title>Responsive Setup</title>
+	<title>Intro to SCSS/Font Refresher</title>
+	
+	<link href="css/style.css" rel="stylesheet">
+	
 	<meta name="handheldfriendly" content="true">
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
-	<h1>Intro to SCSS</h1>
-    
-    <a href="#" class="primary-btn">Primary</a>
-    <a href="#" class="secondary-btn">Secondary Button</a>
-        
-    <div class="border">
-      <p>This is a nested paragraph</p>
-    </div>
+	<i class="icon-rocket"></i>
 
-    <p>This is a paragraph.</p>
-    
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
+	<h1>Help rocket fly!</h1>
+	
+	<button class="blastoff-btn" id="bt">Click to BLASTOFF!</button>
+	<button class="land-btn" id="bt2">Click to land!</button>
     
 </body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/viewportchecker.js"></script>
+<script>
+
+  $(function() {
+	$("#bt").click(function() {
+		$(".icon-rocket").addClass("animated fadeOutUpBig");
+	});
+	$("#bt2").click(function() {
+		$(".icon-rocket").removeClass("animated fadeOutUpBig");
+		$(".icon-rocket").addClass("animated fadeInDownBig");
+	});
+});
+
+</script>
 </html>

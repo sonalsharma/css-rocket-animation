@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="rocket" unicode="&#xe800;" d="m448-76c0 0 54 145-73 137l-105 1-105-1c-126 10-73-137-73-137-64 81-56 159-48 193 4 16 15 29 30 36 41 16 78-30 78-30-4 28-28 137-28 137-23 95-9 217 4 292 14 82 52 158 111 218 18 19 31 28 31 28s13-9 31-28c59-60 97-136 111-218 13-75 27-197 4-292 0 0-24-109-28-137 0 0 37 46 78 30 15-7 26-20 30-36 8-34 17-112-48-193z m-298 707h241c0 0-48 116-121 168 0 0-70-49-120-168z m23-530h196l38 119h-273l39-119z m97 453c-35 0-63-55-63-124s28-123 63-123 63 55 63 123-28 124-63 124z" horiz-adv-x="541" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,193 @@
+/* this file imports all scss partials to be compiled into one stylesheet
+partial files arent compiled until imported into an unprefixed .scss file */
+/* import all partial files(variables, mixinis and other modules */
+/*contains all variables*/
+/*variables are placeholders for storing information that you want to resuse throughout your styles.
+You can store things like colors, font-stacks, or any css value you think you might want to reuse.
+SCSS uses the $ symbol to declare a variable */
+/*contains all mixins*/
+/*component rules */
+/* main file for css/sass */
+/* line 3, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 20em;
+  background: transparent url("../img/stardust.png") repeat repeat center; }
+
+/* line 11, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+h1 {
+  color: #FF9900; }
+
+/* line 15, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.blastoff-btn {
+  background-color: transparent;
+  padding: 0.75rem;
+  margin: 0.375rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #FF9900;
+  border: 2px solid #FF9900;
+  border-radius: 4px;
+  line-height: 1.375;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-animation: hue 60s infinite linear; }
+  /* line 37, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/mixins */
+  .blastoff-btn:hover {
+    background-color: #FFF5E0; }
+  /* line 41, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/mixins */
+  .blastoff-btn:focus {
+    outline: none; }
+
+/* line 19, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.land-btn {
+  background-color: transparent;
+  padding: 0.75rem;
+  margin: 0.375rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #FF9900;
+  border: 2px solid #FF9900;
+  border-radius: 4px;
+  line-height: 1.375;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-animation: hue 60s infinite linear; }
+  /* line 37, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/mixins */
+  .land-btn:hover {
+    background-color: #666; }
+  /* line 41, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/mixins */
+  .land-btn:focus {
+    outline: none; }
+
+/* line 24, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInDownBig {
+  /* line 35, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+
+  /* line 42, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDownBig {
+  /* line 51, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+
+  /* line 58, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+/* line 66, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig; }
+
+/* line 88, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig; }
+
+@-webkit-keyframes fadeOutUpBig {
+  /* line 96, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  0% {
+    opacity: 1; }
+
+  /* line 100, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+@keyframes fadeOutUpBig {
+  /* line 122, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  0% {
+    opacity: 1; }
+
+  /* line 126, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+/* line 134, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.fadeOutUpBig {
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig; }
+
+@font-face {
+  font-family: 'rocket';
+  src: url('../font/rocket.eot?20268936');
+  src: url('../font/rocket.eot?20268936#iefix') format('embedded-opentype'), url('../font/rocket.woff?20268936') format('woff'), url('../font/rocket.ttf?20268936') format('truetype'), url('../font/rocket.svg?20268936#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?20268936#fontello') format('svg');
+  }
+}
+*/
+/* line 162, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "rocket";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  color: #FFFFD6;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 12em
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 194, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.icon-rocket:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 196, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.icon-rocket:before {
+  content: '\e800'; }
+
+/* '' */
+/* hierarchy matters. import variables first, then mixins, then fonts etc */
