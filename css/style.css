@@ -77,56 +77,71 @@ h1 {
 @-webkit-keyframes fadeInDownBig {
   /* line 35, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
 
   /* line 42, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   100% {
-    -webkit-transform: translate(0, 6em);
-    transform: translate(0, 6em); }
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
 
 @keyframes fadeInDownBig {
   /* line 51, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
 
   /* line 58, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   100% {
-    -webkit-transform: translate(0, 6em);
-    transform: translate(0, 6em); }
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
 
 /* line 66, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
-  animation-name: fadeInDownBig; }
+  animation-name: fadeInDownBig;
+  display: block;
+}
+
+/* line 88, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig; 
+  display: block;
+}
 
 @-webkit-keyframes fadeOutUpBig {
   /* line 96, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   0% {
-   -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
+    opacity: 1; }
 
   /* line 100, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   100% {
-    -webkit-transform: translate(0, -6em);
-    transform: translate(0, -6em); } }
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
 
 @keyframes fadeOutUpBig {
   /* line 122, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
+    opacity: 1; }
 
   /* line 126, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
   100% {
-    -webkit-transform: translate(0, -6em);
-    transform: translate(0, -6em); } }
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
 
 /* line 134, /Users/supercake/Documents/GD SEM 6/WEB DEV/exercise-2-scss/scss/components/main */
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
-  animation-name: fadeOutUpBig; }
+  animation-name: fadeOutUpBig; 
+  display: block;
+}
 
 @font-face {
   font-family: 'rocket';
